@@ -2,6 +2,7 @@
 
 * Студент: [Евгений Чиликов](https://up.htmlacademy.ru/htmlcss/20/user/615575).
 * Наставник: `Неизвестно`.
+* Наставник: [Сергей Козыренко] (https://htmlacademy.ru/profile/id671859).
 
 ---
 
