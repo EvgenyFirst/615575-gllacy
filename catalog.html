@@ -7,13 +7,13 @@
   <body>
 
     <header class="main-header">
+      <a class="main-header-logo">
+        <img src="img/index-logo.svg" width="154" height="64" alt="Логотип магазина «GllacyShop»">
+      </a>     
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="154" height="64" alt="Логотип магазина «GllacyShop»">
-        </a>
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a>
-            <ul class="site-navigation-catalog">
+            <ul class="site-navigation-levels">
               <li><a href="info.html"><b>Новинки</b></a>
                     <ul>
                       <li><a href="#">Сливочное</a></li>
@@ -28,16 +28,20 @@
           <li><a href="about.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search-link">Поиск</li>
-          <li class="login-link">Вход</li>
-          <li class="basket-link">Корзина</li>
+          <li class="search-link"><a href="#">Поиск</a></li>
+          <li class="login-link">
+              Вход
+              <form>Form</form> <!-- Здесь будет форма входа -->
+          </li>
+          <li class="basket-link"><a href="#">Корзина</a></li>
         </ul>
         <ul class="working hours">
-          <li >С 10 до 20, ежедневно</li>
-          <li >8 812 450-25-25</li>
+          <li>С 10 до 20, ежедневно</li>
+          <li>8 812 450-25-25</li>
         </ul>
       </nav>
     </header>
+        <!-- Форма обратной связи -->
         <section class="modal modal-feedback">
             <h2>Мы обязательно вам ответим!</h2>
             <!-- Здесь будет форма -->
@@ -59,85 +63,91 @@
         </section>
         
         <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></p>
-            <p class="catalog-item-price"><b> 310 ₽/кг</b>
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-        </section>
-        <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></p>
-            <p class="catalog-item-price"><b> 380 ₽/кг</b>
-            <p>Сливочно-кофейное с кусочками шоколада</p>
-        </section>
-        <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></p>
-            <p class="catalog-item-price"><b> 355 ₽/кг</b>
-            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-        </section>
-        <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
-            <p class="catalog-item-price"><b> 415 ₽/кг</b></p>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
-        </section>
-        <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-5.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
-            <p class="catalog-item-price"><b> 325 ₽/кг</b></p>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
-        </section>
-        <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-6.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
-            <p class="catalog-item-price"><b> 410 ₽/кг</b></p>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
-        </section>
-        <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-7.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
-            <p class="catalog-item-price"><b> 375 ₽/кг</b></p>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
-        </section>
-        <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-8.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
-            <p class="catalog-item-price"><b> 320 ₽/кг</b></p>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
-        </section>
-        <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-9.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
-            <p class="catalog-item-price"><b> 440 ₽/кг</b></p>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
-        </section>
-        <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-10.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
-            <p class="catalog-item-price"><b> 435 ₽/кг</b></p>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
-        </section>
-        <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-11.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
-            <p class="catalog-item-price"><b> 355 ₽/кг</b></p>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
-        </section>
-        <section class="catalog-item">
-            <p class="catalog-item-image">
-            <img src="img/ice-12.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
-            <p class="catalog-item-price"><b> 420 ₽/кг</b></p>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
+            <ul>
+                <li>
+                    <p class="catalog-item-image">
+                    <img src="img/ice-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></p>
+                    <p class="catalog-item-price"><b> 310 ₽<span class="kg">/кг</span></b>
+                    <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                </li>
+                <li>
+                    <p class="catalog-item-image">
+                    <img src="img/ice-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></p>
+                    <p class="catalog-item-price"><b> 380 ₽<span class="kg">/кг</span></b>
+                    <p>Сливочно-кофейное с кусочками шоколада</p>
+                </li>
+                <li>
+                    <p class="catalog-item-image">
+                    <img src="img/ice-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></p>
+                    <p class="catalog-item-price"><b> 355 ₽<span class="kg">/кг</span></b>
+                    <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+                </li>
+                <li class="catalog-item">
+                    <p class="catalog-item-image">
+                    <img src="img/ice-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
+                    <p class="catalog-item-price"><b> 415 ₽<span class="kg">/кг</span></b></p>
+                    <p>Сливочное крем-брюле с карамельной подливкой</p>
+                </li>
+                <li>
+                    <p class="catalog-item-image">
+                    <img src="img/ice-5.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
+                    <p class="catalog-item-price"><b> 325 ₽<span class="kg">/кг</span></b></p>
+                    <p>Сливочное крем-брюле с карамельной подливкой</p>
+                </li>
+                <li>
+                    <p class="catalog-item-image">
+                    <img src="img/ice-6.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
+                    <p class="catalog-item-price"><b> 410 ₽<span class="kg">/кг</span></b></p>
+                    <p>Сливочное крем-брюле с карамельной подливкой</p>
+                </li>
+                <li>
+                    <p class="catalog-item-image">
+                    <img src="img/ice-7.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
+                    <p class="catalog-item-price"><b> 375 ₽<span class="kg">/кг</span></b></p>
+                    <p>Сливочное крем-брюле с карамельной подливкой</p>
+                </li>
+                <li>
+                    <p class="catalog-item-image">
+                    <img src="img/ice-8.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
+                    <p class="catalog-item-price"><b> 320 ₽<span class="kg">/кг</span></b></p>
+                    <p>Сливочное крем-брюле с карамельной подливкой</p>
+                </li>
+                <li>
+                    <p class="catalog-item-image">
+                    <img src="img/ice-9.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
+                    <p class="catalog-item-price"><b> 440 ₽<span class="kg">/кг</span></b></p>
+                    <p>Сливочное крем-брюле с карамельной подливкой</p>
+                </li>
+                <li>
+                    <p class="catalog-item-image">
+                    <img src="img/ice-10.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
+                    <p class="catalog-item-price"><b> 435 ₽<span class="kg">/кг</span></b></p>
+                    <p>Сливочное крем-брюле с карамельной подливкой</p>
+                </li>
+                <li>
+                    <p class="catalog-item-image">
+                    <img src="img/ice-11.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
+                    <p class="catalog-item-price"><b> 355 ₽<span class="kg">/кг</span></b></p>
+                    <p>Сливочное крем-брюле с карамельной подливкой</p>
+                </li>
+                <li>
+                    <p class="catalog-item-image">
+                    <img src="img/ice-12.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></p>
+                    <p class="catalog-item-price"><b> 420 ₽<span class="kg">/кг</span></b></p>
+                    <p>Сливочное крем-брюле с карамельной подливкой</p>
+                </li>
+            </ul>
         </section>
   
-    <!-- Пагинатор -->
+        <!-- Пагинатор -->
         <section  class="pagination-list">
             <ul>
                 <li class="pagination-item"><a href="#"></a>1</li>
                 <li class="pagination-item pagination-item-current"><a>2</a></li>
                 <li class="pagination-item"><a href="#"></a>3</li>
-                <li class="pagination-item"><a href="#"></a>4</li>      
+                <li class="pagination-item"><a href="#"></a>4</li>
+                <li class="pagination-item"><a href="#"></a>5</li>
+                <li class="pagination-item"><a href="#"></a>></li>       
             </ul>
         </section>
 
@@ -164,7 +174,7 @@
             </ul>
         </div>
         <div class="footer-copyright">
-            <b>РАЗРАБОТАНО:</b>
+            <p><b>РАЗРАБОТАНО:</b></p>
             <a class="button" href="https://htmlacademy.ru/">HTML Academy</a>         
         </div>
     </footer>
