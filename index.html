@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -30,10 +31,9 @@
           <li><a href="delivery-and-payment.html">Доставка и оплата</a></li>
           <li><a href="about.html">О Компании</a></li>
         </ul>
+        
+        <h2 class="visually-hidden">Поиск по сайту</h2>
         <ul class="user-navigation-main">
-         
-          <h2 class="visually-hidden">Поиск по сайту</h2>
-          
           <li class="search-link">
               <div class="search">
                   <a href="#">Поиск</a>
@@ -56,12 +56,11 @@
               <a class="card" href="#">Корзина</a>
           </li>
         </ul>
+        
+        <h2 class="visually-hidden">Режим работы</h2>
         <ul class="working hours">
-         
-          <h2 class="visually-hidden">Режим работы</h2>
-          
-          <p>С 10 до 20, ежедневно</p><br>
-          <p>8 812 450-25-25</p>
+          <li>С 10 до 20, ежедневно</li>
+          <li>8 812 450-25-25</li>
         </ul>
       </nav>
     </header>
@@ -211,16 +210,16 @@
             <h2 class="visually-hidden">Новости блога</h2>
             
             <h3>Новое в нашем блоге</h3>
-            <article class="article">
-                <a href="#" alt="10 способов сервировки фруктовых щербетов к столу">10 способов сервировки фруктовых щербетов к столу</a>
-            </article>
+            <div class="article">
+                <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </div>
         </section>    
         
         <!-- Рассылка -->
         <section class="sending">
             <h2 class="visually-hidden">Подписка на рассылку событий компаниии по почте</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-            <button class="button" href="#">Отправить</button>
+            <input type="button" class="button" value="Отправить">
         </section> 
         
         <!-- Карта -->
@@ -228,7 +227,7 @@
            
             <h2 class="visually-hidden">Местоположение магазина "Глэйси"</h2>
             
-            <a href="#" alt=""></a> <!-- ссылка на карту -->
+            <a href="#"></a> <!-- ссылка на карту -->
         </section> 
         
         <!-- Форма обратной связи на карте -->
@@ -264,8 +263,9 @@
                 <li><a href="№">Наши документы</a></li>
                 <li><a href="№">Экологические стандарты</a></li>                
             </ul>
+            
+           <h2 class="visually-hidden">Авторские права</h2>    
            <ul class="footer-copyright">
-        <h2 class="visually-hidden">Авторские права</h2>
               <li class="footer-copyright-image">
                   <img src="img/logo-htmlacademy-small.png" width="15" height="13" alt=""> <!-- белое лого HTML Academy -->
               </li> 
