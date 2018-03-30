@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Евгений Чиликов](https://up.htmlacademy.ru/htmlcss/20/user/615575).
-* Наставник: [Сергей Козыренко] (https://htmlacademy.ru/profile/id671859).
+* Наставник: [Ирина Малиновская] (https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
