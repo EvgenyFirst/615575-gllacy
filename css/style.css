@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    
+    background-color: #000000;
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.main-header,
+.site-navigation,
+.site-navigation-levels,
+.site-navigation-levels-norm,
+.user-navigation-main,
+.working-hours,
+.user-forget-pass,
+.user-new-reg,
+.breadcrumbs,
+.filter-option,
+.container,
+.slider-items,
+.slide-radio,
+.catalog-item,
+.news,
+.news-item,
+.news-blog,
+.pagination-item,
+.footer-social,
+.footer-about,
+.footer-copyright,
+.main-footer {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.breadcrumbs a,
+.catalog a,
+.pagination-list a,
+.main-footer a,
+.search a,
+.basket-link a,
+.slider-item a,
+.banner-1 a,
+.banner-2 a,
+.article a,
+.map a {
+    color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:active,
+.site-navigation a:focus {
+    background: white;
+    color: #000000;
+}
+.site-navigation {
+    color: #000000;
+    font-weight: bold;
+    user-select: none;
+}
+.site-navigation-levels-norm a {
+    font-weight: normal;
+    color: #000000;
+}
+.site-navigation-levels-norm a:hover {
+    background: #ffbc9e;
+}
+.site-navigation-levels-norm a:active,
+.site-navigation-levels-norm a:focus {
+    background: #f6b5a5;
+}
+
+.search a:hover,
+.user-navigation a:hover,
+.card:hover,
+.slider-items a:hover,
+.banner-1 a:hover,
+.banner-2 a:hover,
+.catalog-items a:hover,
+.article a:hover,
+.map a:hover,
+.footer-social a:hover,
+.footer-about a:hover,
+.copyright-text a:hover {
+    color: #ffbc9e;
+}
+
+.breadcrumbs-main {
+    color: #000000;
+    font-weight: bold;
+}
+.breacrumbs-current {
+    color: #d07058;
+}
+.breadcrumbs-main a:hover {
+    background-color: white;
+    color: #000000;
+}
+.breadcrumbs-catalog a:hover {
+    background-color: #ffbc9e;
+    color: #000000;
+}
+
+
+.slider-item {
+    text-align: center;
+}
+
+.banner-1 {
+    background-color: #000000;
+    background-image: url("../img/banner-malina.jpg");
+    background-position: 0 0;
+    width: 550px;
+    height: 229px;
+    background-repeat: no-repeat;
+}
+.banner-2 {
+    background-color: #000000;
+    background-image: url("../img/banner-choco.jpg");
+    background-position: 0 0;
+    width: 550px;
+    height: 229px;
+    background-repeat: no-repeat;
+}
+.banner-1 h2,
+.banner-2 h2 {
+    font-size: 25px;
+    line-height: 41px;    
+}
+
+/*
+Скорее всего наслоение текста из-за width: 861px; и height: 373px;, тк классы news-item пока не расположены как на макете
+*/
+.news {
+    background-color: #ffffff;
+    background-image: url("../img/wafer.jpg");
+    background-repeat: no-repeat;
+    color: #323232;
+    width: 861px;
+    height: 373px;
+    background-repeat: no-repeat;
+
+}
+
+.news-blog {
+    background-color: #ffffff;
+    background-image: url("../img/banner-news.jpg");
+    background-repeat: no-repeat;
+    width: 422px;
+    height: 229px;
+}
+.news-blog h3 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #5a5a5a;
+}
+
+.news-blog a {
+    font-size: 24px;
+    line-height: 30px;
+    color: #353535;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sending {
+    background-color: #000000;
+    background-image: url("../img/sending.jpg");
+    background-repeat: no-repeat;
+    width: 422px;
+    height: 229px;
+    color: #5a5a5a;
+}
+
+.map {
+    text-align: center;
+}
+
+/* Кнопки */
+/* Обычное состояние */
+.button {
+    font: inherit;
+    background: linear-gradient(90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 44px;
+}
+/* Наведение */
+.button:hover {
+    color: #ffffff;
+    background-image: linear-gradient(90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+}
+/* Нажатие */
+.button:active,
+.button:focus {
+    color: #000000;
+    background: linear-gradient(90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+}
+
+.search input,
+.user input,
+.basket-links input,
+.most-feedback input,
+.most-feedback-- input,
+.most-feedback--button input {
+    font: inherit;
+}
+
+/* Рамка полям ввода */
+.border-focus { /* Обычное состояние */
+    border: 2px solid #d3d3d2;
+}
+.border-focus:hover { /* Наведение */
+    border-color: #c7c6c5; 
+}
+.border-focus:active,
+.border-focus:focus { /* Курсор внутри поля */
+    border-color: #8fbdec;
+}
+
+/* Подвал */
+.main-footer {
+    background-color: #000000;
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Пагинатор */
+/* Обычное состояние */
+.pagination-item a {
+    font: inherit;
+    color: #ffffff;
+    text-align: center;
+}
+/* Наведение */
+.pagination-item a:hover {
+    color: #ffffff;
+    background-image: #ffffff;
+    opacity: 0.2; 
+}
+/* Нажатие */
+.pagination-item a:active,
+.pagination-item a:focus {
+    color: #000000;
+    background: #ffffff;
+    opacity: 1;
+}
+
+
+/* Кнопка Применить */
+/* Обычное состояние */
+.button-apply {
+    font: inherit;
+    color: #ffffff;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb( 255, 255, 255 )
+    opacity: 0.2;
+}
+/* Наведение */
+.button-apply:hover {
+    color: #353535;
+    background-image: #ffffff;
+    opacity: 1;
+}
+/* Нажатие */
+.button-apply:active,
+.button-apply:focus {
+    color: #353535;
+    background: #ffffff;
+}
+
+/* Полупрозрачное подчеркивание некоторых ссылок в Подвале и в Хедере */
+.site-nav-line-light-opacity {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Точки к слайдеру */
+/* Рамка */
+.slide-btn-border {
+    border: 2px solid white;
+}
+/* Обычное состояние */
+.slide-btn {
+    width: 17px;
+    height: 17px;
+    color: white;
+    text-align: center;
+}
+/* Наведение */
+.slide-btn:hover {
+    color: #ffffff;
+    background-image: #ffffff;
+    opacity: 0.2;
+}
+/* Нажатие */
+.slide-btn:active,
+.slide-btn:focus {
+    border-top: 2px solid rgba(255, 255, 255, 1);
+    border-right: 2px solid rgba(255, 255, 255, 1);
+    border-left: 2px solid rgba(255, 255, 255, 1);
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}

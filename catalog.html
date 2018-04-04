@@ -2,8 +2,10 @@
 <html lang="ru">
     <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="css/style.css">
+        <title>HTML Academy: Глейси</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
@@ -14,11 +16,11 @@
 
                     <ul class="site-navigation">
                         <li>
-                            <a href="catalog.html" aria-label="Каталог" tabindex="0">Каталог</a>
+                            <a class="site-nav-line-light-opacity" href="catalog.html" aria-label="Каталог" tabindex="0">Каталог</a>
                             <ul class="site-navigation-levels">
                                 <li>
                                 <a href="info.html" aria-label="Новинки"><b>Новинки</b></a>
-                                    <ul>
+                                    <ul class="site-navigation-levels-norm">
                                         <li>
                                             <a href="#" aria-label="Сливочное" tabindex="0">Сливочное</a>
                                         </li>
@@ -36,10 +38,10 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="delivery-and-payment.html" aria-label="Доставка и оплата" tabindex="0">Доставка и оплата</a>
+                            <a class="site-nav-line-light-opacity" href="delivery-and-payment.html" aria-label="Доставка и оплата" tabindex="0">Доставка и оплата</a>
                         </li>
                         <li>
-                            <a href="about.html" aria-label="О компании" tabindex="0">О Компании</a>
+                            <a class="site-nav-line-light-opacity" href="about.html" aria-label="О компании" tabindex="0">О Компании</a>
                         </li>
                     </ul>
 
@@ -53,7 +55,7 @@
                                 <a href="#" aria-label="Поиск" tabindex="0">Поиск</a>
                                 <form class="search-links" action="https://echo.htmlacademy.ru" method="post">
                                     <label for="search" class="visually-hidden">Поиск по сайту</label>
-                                    <input id="search" type="search" name="search" value="Что ищем?">  
+                                    <input class="border-focus" id="search" type="search" name="search" value="Что ищем?">  
                                 </form>
                             </div>
                         </li>
@@ -67,15 +69,15 @@
                                 <a href="#" tabindex="0">Вход</a>
                                 <form class="user" method="post" action="https://echo.htmlacademy.ru">
                                     <label for="user-login" class="visually-hidden">Поле для ввода логина</label>
-                                    <input id="user-login" type="text" name="login" placeholder="Логин">
+                                    <input class="border-focus" id="user-login" type="text" name="login" placeholder="Логин">
                                     
                                     <label for="user-password" class="visually-hidden">Поле для ввода пароля</label>
-                                    <input id="user-password" type="password" name="password" placeholder="Пароль">
+                                    <input class="border-focus" id="user-password" type="password" name="password" placeholder="Пароль">
 
 
                                     <h3 class="visually-hidden">Забыли пароль?</h3>
 
-                                    <ul>
+                                    <ul class="user-forget-pass">
                                         <li>
                                             <a href="#" tabindex="0">Забыли пароль?</a>
                                         </li>
@@ -83,7 +85,7 @@
 
                                     <h3 class="visually-hidden">Новая регистрация</h3>
 
-                                    <ul>   
+                                    <ul class="user-new-reg">   
                                         <li>
                                             <a href="#" tabindex="0">Новая регистрация</a>
                                         </li>
@@ -98,14 +100,14 @@
                             <a class="card" href="#" aria-label="Корзина" tabindex="0">Корзина</a>
 
                             <form class="basket-links" action="https://echo.htmlacademy.ru" method="post">
-                                <input type="text" id="basket" name="basket"> <!-- временно тип текст --> 
+                                <input class="border-focus" type="text" id="basket" name="basket"> <!-- временно тип текст --> 
                                 <button class="basket-link-button button" aria-label="Оформить заказ" type="submit">Оформить заказ</button>  
                             </form>
                         </li>
                     </ul>
 
                 <h2 class="visually-hidden">Режим работы</h2>                 
-                    <ul class="working hours">
+                    <ul class="working-hours">
                         <li>С 10 до 20, ежедневно</li>
                         <li>8 812 450-25-25</li>
                     </ul>
@@ -116,10 +118,10 @@
             <h1 class="visually-hidden">Магазин «GllacyShop»</h1>
             <h1 class="page-title">Сливочное мороженое</h1>
                 <ul class="breadcrumbs">
-                    <li>
-                        <a href="index.html" aria-label="ерейти на главную страницу сайта" tabindex="0">Главная</a>
+                    <li class="breadcrumbs-main">
+                        <a href="index.html" aria-label="Перейти на главную страницу сайта" tabindex="0">Главная</a>
                     </li>
-                    <li>
+                    <li class="breadcrumbs-catalog">
                         <a href="catalog.html" aria-label="Каталог мороженого" tabindex="0">Каталог</a>
                     </li>
                     <li class="breacrumbs-current">
@@ -149,7 +151,7 @@
                             <legend>Цена: 100 руб - 500 руб.</legend>
                             <div class="filter-price">
                                 <label for="priceminmax" class="visually-hidden">Фильтр по цене от ста рублей до пятиста рублей</label>
-                                <input type="range" id="priceminmax" name="pricemimax" min="100" max="500" step="1">
+                                <input class="border-focus" type="range" id="priceminmax" name="pricemimax" min="100" max="500" step="1">
                             </div>
                             <div class="filter-price output-area">
                             <p class="visually-hidden">Поле с выводом цены мороженого по фильтру</p>
@@ -205,7 +207,7 @@
                                 </li>
                             </ul>   
                         </fieldset>
-                        <button class="filter-button button" aria-label="Кнопка применения критериев фильтра" type="submit">Применить</button> 
+                        <button class="filter-button button-apply" aria-label="Кнопка применения критериев фильтра" type="submit">Применить</button> 
                     </form>              
             </section>
 
@@ -221,8 +223,8 @@
                                 <span class="kg">/кг</span>
                             </b>
                         </p>
-                        <a href="#" class="catalog-item-link" aria-label="Сливочное с апельсиновым джемом и цитрусовой стружкой" tabindex="0">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                        <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочное с апельсиновым джемом и цитрусовой стружкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                        <a href="#" class="catalog-item-link button" aria-label="Сливочное с апельсиновым джемом и цитрусовой стружкой" tabindex="0">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                        <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочное с апельсиновым джемом и цитрусовой стружкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>
                     <li class="catalog-item">
                         <img src="img/ice-2.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочно-кофейное с кусочками шоколада">
@@ -232,8 +234,8 @@
                                 <span class="kg">/кг</span>
                             </b>
                         </p>
-                        <a href="#" class="catalog-item-link" aria-label="Сливочно-кофейное с кусочками шоколада" tabindex="0">Сливочно-кофейное с кусочками шоколада</a>
-                        <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочно-кофейное с кусочками шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                        <a href="#" class="catalog-item-link button" aria-label="Сливочно-кофейное с кусочками шоколада" tabindex="0">Сливочно-кофейное с кусочками шоколада</a>
+                        <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочно-кофейное с кусочками шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>
                     <li class="catalog-item">
                         <img src="img/ice-3.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -243,8 +245,8 @@
                                 <span class="kg">/кг</span>
                             </b>
                         </p>
-                        <a href="#" class="catalog-item-link" aria-label="ливочно-клубничное с присыпкой из белого шоколада" tabindex="0">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                        <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр ливочно-клубничное с присыпкой из белого шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                        <a href="#" class="catalog-item-link button" aria-label="ливочно-клубничное с присыпкой из белого шоколада" tabindex="0">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                        <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр ливочно-клубничное с присыпкой из белого шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>
                     <li class="catalog-item">
                         <img src="img/ice-4.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -254,8 +256,8 @@
                                 <span class="kg">/кг</span>
                             </b>
                         </p>
-                        <a href="#" class="catalog-item-link" aria-label="Сливочное крем-брюле с карамельной подливкой" tabindex="0">Сливочное крем-брюле с карамельной подливкой</a>    
-                        <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочное крем-брюле с карамельной подливкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                        <a href="#" class="catalog-item-link button" aria-label="Сливочное крем-брюле с карамельной подливкой" tabindex="0">Сливочное крем-брюле с карамельной подливкой</a>    
+                        <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочное крем-брюле с карамельной подливкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>                
                     <li class="catalog-item">
                         <img src="img/ice-5.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочное с брусничным джемом">
@@ -265,8 +267,8 @@
                                 <span class="kg">/кг</span>
                             </b>
                         </p>
-                        <a href="#" class="catalog-item-link" aria-label="Сливочное с брусничным джемом" tabindex="0">Сливочное с брусничным джемом"</a>
-                        <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочное с брусничным джемом" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                        <a href="#" class="catalog-item-link button" aria-label="Сливочное с брусничным джемом" tabindex="0">Сливочное с брусничным джемом"</a>
+                        <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочное с брусничным джемом" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>
                     <li class="catalog-item">
                         <img src="img/ice-6.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочно-черничное с цельными ягодами черники">
@@ -276,8 +278,8 @@
                                 <span class="kg">/кг</span>
                             </b>
                         </p>
-                        <a href="#" class="catalog-item-link" aria-label="Сливочно-черничное с цельными ягодами черники" tabindex="0">Сливочно-черничное с цельными ягодами черники</a>
-                        <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочно-черничное с цельными ягодами черники" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                        <a href="#" class="catalog-item-link button" aria-label="Сливочно-черничное с цельными ягодами черники" tabindex="0">Сливочно-черничное с цельными ягодами черники</a>
+                        <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочно-черничное с цельными ягодами черники" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>
                     <li class="catalog-item">
                         <img src="img/ice-7.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочно-лимонное с карамельной присыпкой">
@@ -287,8 +289,8 @@
                                 <span class="kg">/кг</span>
                             </b>
                         </p>
-                        <a href="#" class="catalog-item-link" aria-label="Сливочно-лимонное с карамельной присыпкой" tabindex="0">Сливочно-лимонное с карамельной присыпкой</a>
-                        <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочно-лимонное с карамельной присыпкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                        <a href="#" class="catalog-item-link button" aria-label="Сливочно-лимонное с карамельной присыпкой" tabindex="0">Сливочно-лимонное с карамельной присыпкой</a>
+                        <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочно-лимонное с карамельной присыпкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>
                         <li class="catalog-item">
                         <img src="img/ice-8.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочное с шоколадной стружкой">
@@ -298,8 +300,8 @@
                                 <span class="kg">/кг</span>
                             </b>
                         </p>
-                        <a href="#" class="catalog-item-link" aria-label="Сливочное с шоколадной стружкой" tabindex="0">Сливочное с шоколадной стружкой</a>   
-                        <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочное с шоколадной стружкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                        <a href="#" class="catalog-item-link button" aria-label="Сливочное с шоколадной стружкой" tabindex="0">Сливочное с шоколадной стружкой</a>   
+                        <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочное с шоколадной стружкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>
                     <li class="catalog-item">
                         <img src="img/ice-9.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочно-ванильное с кусочками шоколада">
@@ -309,8 +311,8 @@
                                 <span class="kg">/кг</span>
                             </b>
                         </p>
-                        <a href="#" class="catalog-item-link" aria-label="Сливочно-ванильное с кусочками шоколада" tabindex="0">Сливочно-ванильное с кусочками шоколада</a> 
-                        <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочно-ванильное с кусочками шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                        <a href="#" class="catalog-item-link button" aria-label="Сливочно-ванильное с кусочками шоколада" tabindex="0">Сливочно-ванильное с кусочками шоколада</a> 
+                        <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочно-ванильное с кусочками шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>
                 <li class="catalog-item">
                     <img src="img/ice-10.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочное с ментоловым сиропом">
@@ -320,8 +322,8 @@
                             <span class="kg">/кг</span>
                         </b>
                     </p>
-                    <a href="#" class="catalog-item-link" aria-label="Сливочное с ментоловым сиропом" tabindex="0">Сливочное с ментоловым сиропом</a>
-                    <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочное с ментоловым сиропом" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                    <a href="#" class="catalog-item-link button" aria-label="Сливочное с ментоловым сиропом" tabindex="0">Сливочное с ментоловым сиропом</a>
+                    <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочное с ментоловым сиропом" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>
                     <li class="catalog-item">
                         <img src="img/ice-11.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочное с кусочками черного шоколада">
@@ -331,8 +333,8 @@
                                 <span class="kg">/кг</span>
                             </b>
                         </p>
-                        <a href="#" class="catalog-item-link" aria-label="Сливочное с кусочками черного шоколада" tabindex="0">Сливочное с кусочками черного шоколада</a>
-                        <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочное с кусочками черного шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                        <a href="#" class="catalog-item-link button" aria-label="Сливочное с кусочками черного шоколада" tabindex="0">Сливочное с кусочками черного шоколада</a>
+                        <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочное с кусочками черного шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>
                     <li class="catalog-item">
                         <img src="img/ice-12.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочное смятным сиропом">
@@ -342,8 +344,8 @@
                                 <span class="kg">/кг</span>
                             </b>
                         </p>
-                        <a href="#" class="catalog-item-link" aria-label="Сливочное смятным сиропом" tabindex="0">Сливочное с мятным сиропом</a>
-                        <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочное смятным сиропом" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                        <a href="#" class="catalog-item-link button" aria-label="Сливочное смятным сиропом" tabindex="0">Сливочное с мятным сиропом</a>
+                        <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочное смятным сиропом" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                     </li>
                 </ul>
             </section> 
@@ -367,9 +369,12 @@
                         <li class="pagination-item">
                             <a href="#" aria-label="Пятая страница каталога мороженого" tabindex="0">5</a>
                         </li>
-                        <li class="pagination-item">>
-                            <a href="#" aria-label="Следующие страницы каталога мороженого" tabindex="0">></a>
-                        </li>       
+                        <li class="pagination-item">
+                            <a href="#" aria-label="Следующие страницы каталога мороженого" tabindex="0">&#62;</a> <!-- Знак больше -->
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" aria-label="Предыдущие страницы каталога мороженого" tabindex="0">&#60;</a> <!-- Знак меньше -->
+                        </li>         
                     </ul>
             </section>
         </main>
@@ -394,28 +399,28 @@
             <h2 class="visually-hidden">О компании</h2>
                 <ul class="footer-about">
                     <li>
-                        <a href="#" aria-label="Для поставщиков" tabindex="0"><b>Для поставщиков</b></a>
+                        <a class="site-nav-line-light-opacity" href="#" aria-label="Для поставщиков" tabindex="0"><b>Для поставщиков</b></a>
                     </li> <!-- белое сердечко будет реализовано с помощью css -->
                     <li>
-                        <a href="#" aria-label="О производстве" tabindex="0">О производстве</a>
+                        <a class="site-nav-line-light-opacity" href="#" aria-label="О производстве" tabindex="0">О производстве</a>
                     </li>
                     <li>
-                        <a href="#" aria-label="Наши документы" tabindex="0">Наши документы</a>
+                        <a class="site-nav-line-light-opacity" href="#" aria-label="Наши документы" tabindex="0">Наши документы</a>
                     </li>
                     <li>
-                        <a href="#" aria-label="Экологические стандарты" tabindex="0">Экологические стандарты</a>
+                        <a class="site-nav-line-light-opacity" href="#" aria-label="Экологические стандарты" tabindex="0">Экологические стандарты</a>
                     </li>                
                 </ul>
 
             <h2 class="visually-hidden">Авторские права</h2>    
                 <ul class="footer-copyright">
                     <li class="footer-copyright-image">
-                        <img src="img/logo-htmlacademy-small.png" width="15" height="13" alt=""> <!-- белое лого HTML Academy -->
+                        <img src="img/logo-htmlacademy-small.png" width="100" height="39" alt="Логотип правообладателz HTML Academy"> <!-- белое лого HTML Academy -->
                     </li> 
                     <li class="footer-copyright-text">
                         <p class="copyright-text">
                             Сделано в 
-                            <a class="footer-copyright-text-link" aria-label="Перейти на страницу с информацией о правообладателе HTML Academy" href="https://htmlacademy.ru/" tabindex="0">HTML Academy</a>
+                            <a class="footer-copyright-text-link site-nav-line-light-opacity" aria-label="Перейти на страницу с информацией о правообладателе HTML Academy" href="https://htmlacademy.ru/" tabindex="0">HTML Academy</a>
                             © 2017
                         </p>
                     </li>

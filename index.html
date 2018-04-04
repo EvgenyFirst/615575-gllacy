@@ -3,8 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        </head>
+    </head>
     <body>
         <header class="main-header">
             <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «GllacyShop»">
@@ -14,11 +16,11 @@
 
                     <ul class="site-navigation">
                         <li>
-                            <a href="catalog.html" aria-label="Каталог" tabindex="0">Каталог</a>
+                            <a class="site-nav-line-light-opacity" href="catalog.html" aria-label="Каталог" tabindex="0">Каталог</a>
                             <ul class="site-navigation-levels">
                                 <li>
                                 <a href="info.html" aria-label="Новинки"><b>Новинки</b></a>
-                                    <ul>
+                                    <ul class="site-navigation-levels-norm">
                                         <li>
                                             <a href="#" aria-label="Сливочное" tabindex="0">Сливочное</a>
                                         </li>
@@ -36,10 +38,10 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="delivery-and-payment.html" aria-label="Доставка и оплата" tabindex="0">Доставка и оплата</a>
+                            <a class="site-nav-line-light-opacity" href="delivery-and-payment.html" aria-label="Доставка и оплата" tabindex="0">Доставка и оплата</a>
                         </li>
                         <li>
-                            <a href="about.html" aria-label="О компании" tabindex="0">О Компании</a>
+                            <a class="site-nav-line-light-opacity" href="about.html" aria-label="О компании" tabindex="0">О Компании</a>
                         </li>
                     </ul>
 
@@ -53,7 +55,7 @@
                                 <a href="#" aria-label="Поиск" tabindex="0">Поиск</a>
                                 <form class="search-links" action="https://echo.htmlacademy.ru" method="post">
                                     <label for="search" class="visually-hidden">Поиск по сайту</label>
-                                    <input id="search" type="search" name="search" value="Что ищем?">  
+                                    <input class="border-focus" id="search" type="search" name="search" value="Что ищем?">  
                                 </form>
                             </div>
                         </li>
@@ -67,15 +69,15 @@
                                 <a href="#" tabindex="0">Вход</a>
                                 <form class="user" method="post" action="https://echo.htmlacademy.ru">
                                     <label for="user-login" class="visually-hidden">Поле для ввода логина</label>
-                                    <input id="user-login" type="text" name="login" placeholder="Логин">
+                                    <input class="border-focus" id="user-login" type="text" name="login" placeholder="Логин">
                                     
                                     <label for="user-password" class="visually-hidden">Поле для ввода пароля</label>
-                                    <input id="user-password" type="password" name="password" placeholder="Пароль">
+                                    <input class="border-focus" id="user-password" type="password" name="password" placeholder="Пароль">
 
 
                                     <h3 class="visually-hidden">Забыли пароль?</h3>
 
-                                    <ul>
+                                    <ul class="user-forget-pass">
                                         <li>
                                             <a href="#" tabindex="0">Забыли пароль?</a>
                                         </li>
@@ -83,7 +85,7 @@
 
                                     <h3 class="visually-hidden">Новая регистрация</h3>
 
-                                    <ul>   
+                                    <ul class="user-new-reg">   
                                         <li>
                                             <a href="#" tabindex="0">Новая регистрация</a>
                                         </li>
@@ -98,14 +100,14 @@
                             <a class="card" href="#" aria-label="Корзина" tabindex="0">Корзина</a>
 
                             <form class="basket-links" action="https://echo.htmlacademy.ru" method="post">
-                                <input type="text" id="basket" name="basket"> <!-- временно тип текст --> 
+                                <input class="border-focus" type="text" id="basket" name="basket"> <!-- временно тип текст --> 
                                 <button class="basket-link-button button" aria-label="Оформить заказ" type="submit">Оформить заказ</button>  
                             </form>
                         </li>
                     </ul>
 
                 <h2 class="visually-hidden">Режим работы</h2>                 
-                    <ul class="working hours">
+                    <ul class="working-hours">
                         <li>С 10 до 20, ежедневно</li>
                         <li>8 812 450-25-25</li>
                     </ul>
@@ -139,10 +141,11 @@
                         </li>      
                     </ul>
 
-                <!-- Точки к слайдеру -->
+               <!-- Старая версия
+                Точки к слайдеру 
                 <h2 class="visually-hidden">Нвигация по Слайдеру</h2>
                 <ul class="slider-navigation">
-                    <!-- Point 1, 2, 3 - временные названия белым точкам на слайдере -->
+                    Point 1, 2, 3 - временные названия белым точкам на слайдере 
                     <li>
                         <a class="slider-point" href="#" aria-label="Крем-брюле и пломбир с малиновым джемом" tabindex="0">Point-1</a>
                     </li>
@@ -153,7 +156,22 @@
                         <a class="slider-point" href="#" aria-label="Пломбир с помадкой и клубничный щербет" tabindex="0">Point-3</a>
                     </li>     
                 </ul>
-            </section>
+            </section> -->
+                           
+                <!-- Точки к слайдеру --> 
+                <h2 class="visually-hidden">Навигация по Слайдеру</h2>
+                <ul class="slider-switches">
+                    <li class="slide-radio">
+                        <button class="slide-btn slide-btn-border"></button> <!-- Первый слайд --> 
+                    </li>
+                    <li class="slide-radio">
+                        <button class="slide-btn slide-btn-border"></button> <!-- Второй слайд --> 
+                    </li>
+                    <li class="slide-radio">
+                        <button class="slide-btn slide-btn-border"></button> <!-- Третий слайд --> 
+                    </li>     
+                </ul>
+            </section> 
 
             <!-- Баннеры -->        
             <section class="banner-1">
@@ -181,8 +199,8 @@
                                 <span class="kg">/кг</span>
                                 </b>
                             </p>
-                            <a href="#" class="catalog-item-link" aria-label="Сливочное с апельсиновым джемом и цитрусовой стружкой" tabindex="0">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                            <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочное с апельсиновым джемом и цитрусовой стружкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                            <a href="#" class="catalog-item-link button" aria-label="Сливочное с апельсиновым джемом и цитрусовой стружкой" tabindex="0">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                            <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочное с апельсиновым джемом и цитрусовой стружкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                         </li>
                         <li class="catalog-item">
                             <img src="img/ice-2.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочно-кофейное с кусочками шоколада">
@@ -192,8 +210,8 @@
                                     <span class="kg">/кг</span>
                                 </b>
                             </p>
-                            <a href="#" class="catalog-item-link" aria-label="Сливочно-кофейное с кусочками шоколада" tabindex="0">Сливочно-кофейное с кусочками шоколада</a>
-                            <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочно-кофейное с кусочками шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                            <a href="#" class="catalog-item-link button" aria-label="Сливочно-кофейное с кусочками шоколада" tabindex="0">Сливочно-кофейное с кусочками шоколада</a>
+                            <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочно-кофейное с кусочками шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                         </li>
                         <li class="catalog-item">
                             <img src="img/ice-3.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -203,8 +221,8 @@
                                     <span class="kg">/кг</span>
                                 </b>
                             </p>
-                            <a href="#" class="catalog-item-link" aria-label="Сливочно-клубничное с присыпкой из белого шоколада" tabindex="0">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                            <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочно-клубничное с присыпкой из белого шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                            <a href="#" class="catalog-item-link button" aria-label="Сливочно-клубничное с присыпкой из белого шоколада" tabindex="0">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                            <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочно-клубничное с присыпкой из белого шоколада" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                         </li>
                         <li class="catalog-item">
                             <img src="img/ice-4.jpg" width="267" height="267" class="catalog-item-image" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -214,17 +232,17 @@
                                     <span class="kg">/кг</span>
                                 </b>
                             </p>
-                            <a href="#" class="catalog-item-link" aria-label="Сливочное крем-брюле с карамельной подливкой" tabindex="0">Сливочное крем-брюле с карамельной подливкой</a>
-                            <a href="#" class="catalog-item-link-fast-view" aria-label="Быстрый просмотр Сливочное крем-брюле с карамельной подливкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
+                            <a href="#" class="catalog-item-link button" aria-label="Сливочное крем-брюле с карамельной подливкой" tabindex="0">Сливочное крем-брюле с карамельной подливкой</a>
+                            <a href="#" class="catalog-item-link-fast-view button" aria-label="Быстрый просмотр Сливочное крем-брюле с карамельной подливкой" tabindex="0">Быстрый просмотр</a> <!-- кнопка появляется при аведении на блок с мороженым -->
                         </li>
                     </ul>
             </section>
 
             <!-- SEO -->
+            <h2 class="visually-hidden">Преимущества магазина "Глэйси"</h2>
             <section class="news">
-                <h2 class="visually-hidden">Преимущества магазина "Глэйси"</h2>
                     <p><b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b></p>
-                <ul>
+                <ul class="news-item">
                     <li>
                         <img src="img/morozhenoe.png" width="49" height="49" alt="">
                         <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -242,7 +260,9 @@
                         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
                     </li>
                 </ul>
-
+            </section> 
+            
+            <section class="news-blog">
                 <!-- Новости блога -->
                 <h2 class="visually-hidden">Новости блога</h2>
                 <h3>Новое в нашем блоге</h3>
@@ -260,13 +280,12 @@
 
                     <!-- Поле ввода электронной почты -->
                     <label for="email" class="visually-hidden">Поле для ввода Вашей электронной почты для подписки на новости</label>
-                    <input id="email" type="email" name="email" placeholder="Электронная почта">    
-
-                    <div class="button">
-                        <p class="visually-hidden">Кнопка для отправки Вашей почты на подписку на наши новости</p>
-                        <input type="submit" value="Отправить">
+                    <input class="border-focus" id="email" type="email" name="email" placeholder="Электронная почта">    
+                    
+                    <p class="visually-hidden">Кнопка для отправки Вашей почты на подписку на наши новости</p>
+                    <div>  
+                        <input class="button" type="submit" value="Отправить">
                     </div>
-                
                 </form>
             </section> 
 
@@ -299,18 +318,18 @@
                 <form class="most-feedback--" method="post" action="https://echo.htmlacademy.ru">
 
                     <label for="user-name" class="visually-hidden">Поле для ввода Вашего имени</label>
-                    <input id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+                    <input class="border-focus" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
 
                     <!-- Поле ввода электронной почты -->
                     <label for="user-email" class="visually-hidden">Поле для ввода Вашей электронный почты для связи с Вами</label>
-                    <input id="user-email" type="email" name="email" placeholder="Ваша почта для ответа?">    
+                    <input class="border-focus" id="user-email" type="email" name="email" placeholder="Ваша почта для ответа?">    
 
                     <label for="user-text" class="visually-hidden">Поле для дополнительного комментария</label>
-                    <input id="user-text" type="text" name="user-text" placeholder="Напишите что-нибудь...">
+                    <input class="border-focus" id="user-text" type="text" name="user-text" placeholder="Напишите что-нибудь...">
 
                     <div class="most-feedback--button">
-                        <label for="user-send" class="visually-hidden">Кнопка для открпавки информауии заполненной формы обратной связи</label>
-                        <input id="user-send" type="submit" value="Отправить">
+                        <label for="user-send" class="visually-hidden">Кнопка для отправки информации заполненной формы обратной связи</label>
+                        <input class="button" id="user-send" type="submit" value="Отправить">
                     </div>
                 </form>
             </section>  
@@ -336,28 +355,28 @@
             <h2 class="visually-hidden">О компании</h2>
                 <ul class="footer-about">
                     <li>
-                        <a href="#" aria-label="Для поставщиков" tabindex="0"><b>Для поставщиков</b></a>
+                        <a class="site-nav-line-light-opacity" href="#" aria-label="Для поставщиков" tabindex="0"><b>Для поставщиков</b></a>
                     </li> <!-- белое сердечко будет реализовано с помощью css -->
                     <li>
-                        <a href="#" aria-label="О производстве" tabindex="0">О производстве</a>
+                        <a class="site-nav-line-light-opacity" href="#" aria-label="О производстве" tabindex="0">О производстве</a>
                     </li>
                     <li>
-                        <a href="#" aria-label="Наши документы" tabindex="0">Наши документы</a>
+                        <a class="site-nav-line-light-opacity" href="#" aria-label="Наши документы" tabindex="0">Наши документы</a>
                     </li>
                     <li>
-                        <a href="#" aria-label="Экологические стандарты" tabindex="0">Экологические стандарты</a>
+                        <a class="site-nav-line-light-opacity" href="#" aria-label="Экологические стандарты" tabindex="0">Экологические стандарты</a>
                     </li>                
                 </ul>
 
             <h2 class="visually-hidden">Авторские права</h2>    
                 <ul class="footer-copyright">
                     <li class="footer-copyright-image">
-                        <img src="img/logo-htmlacademy-small.png" width="15" height="13" alt=""> <!-- белое лого HTML Academy -->
+                        <img src="img/logo-htmlacademy-small.png" width="100" height="39" alt="Логотип правообладателz HTML Academy"> <!-- белое лого HTML Academy -->
                     </li> 
                     <li class="footer-copyright-text">
                         <p class="copyright-text">
                             Сделано в 
-                            <a class="footer-copyright-text-link" aria-label="Перейти на страницу с информацией о правообладателе HTML Academy" href="https://htmlacademy.ru/" tabindex="0">HTML Academy</a>
+                            <a class="footer-copyright-text-link site-nav-line-light-opacity" aria-label="Перейти на страницу с информацией о правообладателе HTML Academy" href="https://htmlacademy.ru/" tabindex="0">HTML Academy</a>
                             © 2017
                         </p>
                     </li>
